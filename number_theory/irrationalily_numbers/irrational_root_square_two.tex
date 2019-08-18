@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+
+\usepackage{geometry}
+\geometry{legalpaper, portrait, margin=1in}
+
+
+\title{Proof that the square root of 2 is Irrational}
+\author{Ruben Colomina Citoler}
+
+\begin{document}
+
+\maketitle
+This is a basic number theory result on the non-rationality of $\sqrt{2}$. To proof this  a \textit{Reductio ad Absurdum} can be applied. Thus, suppose $\sqrt{2} \in \mathds{Q} $ is true, and derive conclusions from this until we will finally arrive to get a contradiction. From this hypotheses we derive that, $\exists p,q \in \mathds{Z}$, such as $\sqrt{2} = \frac{p}{q}$ can be write such as an irreducible fraction. Thus, taking squares on the previous expression, we can write the following equation:
+\begin{equation}
+  p^2 = 2 q^2 
+\label{first}  
+\end{equation}
+Before to continue, it is trivial to notice that if $2 | a^2 \Rightarrow 2 | a$, which is trivial because if $2 \nmid a$, then $2 \nmid a^2.$ (where $\nmid$ means "not divided by'').
+Thus, from \eqref{first}, due to $p^2$ is pair (so $p$), $\exists k_1 \in \mathds{N}$, such as:
+\begin{equation}
+  p = 2k_1
+  \label{second}
+\end{equation}
+Therefore, we can deduce:
+\begin{equation}
+  2 q^2 = (2k_1)^2 = 4{k_1}^2 \Rightarrow q^2 = 2 {k_1}^2 
+  \label{third}
+\end{equation}
+From \eqref{second}, as before, due to $q^2$ is pair, $\exists k_2 \in \mathds{N}$, such as:  
+\begin{equation}
+  q = 2 k_2,
+  \label{fourth}
+\end{equation}
+From equations \eqref{second} and \eqref{fourth}, we can rewrite $\sqrt{2}$ as a reducible fraction:
+\begin{equation}
+ \sqrt{2} = \frac{p}{q} = \frac{2 k_1}{2 k_2} = \frac{k_1}{k_2} 
+\end{equation}
+Which is a contradiction $\lightning$ due to by hypothesis, $\frac{p}{q}$ is irreducibly.
+\begin{equation*}
+\therefore \sqrt{2} \in \mathds{I}
+\end{equation*}
+
+
+
+\end{document}
